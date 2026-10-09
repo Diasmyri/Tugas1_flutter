@@ -18,14 +18,14 @@ class RichTextWidget extends StatelessWidget {
       text: const TextSpan(
         style: TextStyle(fontSize: 20, color: Colors.black),
         children: [
-          TextSpan(text: 'Saya sedang belajar '),
+          TextSpan(text: 'Perkenalkan Nama Saya '),
           TextSpan(
-            text: 'Flutter',
+            text: 'Dias Mayri',
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
           ),
           TextSpan(text: ' dan '),
           TextSpan(
-            text: 'Dart',
+            text: 'Saya Ganteng',
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
           ),
         ],

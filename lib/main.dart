@@ -32,17 +32,31 @@ class RichTextWidget extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: const TextSpan(
-        style: TextStyle(fontSize: 22, color: Colors.white, height: 1.4),
+        style: TextStyle(fontSize: 20, color: Colors.white, height: 1.5),
         children: [
-          TextSpan(text: 'Perkenalkan Nama Saya '),
+          TextSpan(text: 'Halo, nama saya '),
           TextSpan(
             text: 'Dias Mayri',
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.blueAccent,
+            ),
           ),
-          TextSpan(text: ' dan '),
+          TextSpan(text: ',\nseorang '),
           TextSpan(
-            text: 'Saya Ganteng',
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
+            text: 'Software Engineer',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.lightBlueAccent,
+            ),
+          ),
+          TextSpan(text: ' & '),
+          TextSpan(
+            text: 'Developer',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.tealAccent,
+            ),
           ),
         ],
       ),

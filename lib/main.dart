@@ -12,14 +12,31 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFF121212),
         body: Center(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),
-            child: RichTextWidget(),
+            child: ContainerWidget(),
           ),
         ),
       ),
+    );
+  }
+}
+
+class ContainerWidget extends StatelessWidget {
+  const ContainerWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 24.0),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(16.0),
+        border: Border.all(color: Colors.white.withOpacity(0.1)),
+      ),
+      child: const RichTextWidget(),
     );
   }
 }

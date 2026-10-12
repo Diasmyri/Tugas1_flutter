@@ -46,31 +46,39 @@ class RichTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Nama-nama variabel gaya mahasiswa
+    final String salam = 'Halo, nama saya ';
+    final String nama = 'Dias Mayri';
+    final String pemisah = ',\nseorang ';
+    final String pekerjaan = 'Software Engineer';
+    final String simbol = ' & ';
+    final String bidang = 'Developer';
+
     return RichText(
       textAlign: TextAlign.center,
-      text: const TextSpan(
-        style: TextStyle(fontSize: 20, color: Colors.white, height: 1.5),
+      text: TextSpan(
+        style: const TextStyle(fontSize: 20, color: Colors.white, height: 1.5),
         children: [
-          TextSpan(text: 'Halo, nama saya '),
+          TextSpan(text: salam),
           TextSpan(
-            text: 'Dias Mayri',
-            style: TextStyle(
+            text: nama,
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.blueAccent,
             ),
           ),
-          TextSpan(text: ',\nseorang '),
+          TextSpan(text: pemisah),
           TextSpan(
-            text: 'Software Engineer',
-            style: TextStyle(
+            text: pekerjaan,
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.lightBlueAccent,
             ),
           ),
-          TextSpan(text: ' & '),
+          TextSpan(text: simbol),
           TextSpan(
-            text: 'Developer',
-            style: TextStyle(
+            text: bidang,
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.tealAccent,
             ),
